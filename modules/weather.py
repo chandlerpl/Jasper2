@@ -3,7 +3,9 @@ import requests
 import re
 
 WORDS = ["WEATHER"]
+Type = "Server"
 
+PRIORITY = 1
 
 def handle():
     url = 'http://api.openweathermap.org/data/2.5/weather?q={},{}&APPID={}'.format("Kirkby", "UK", "f0ecf01eae9884d6fa621352cb187b36")

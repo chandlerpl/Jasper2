@@ -2,7 +2,8 @@
 import os
 import re
 
-WORDS = ["WEBSITE", "WEBCHECKER", ]
+WORDS = ["WEBSITE", "WEBCHECKER"]
+Type = "Server"
 
 
 def handle():
