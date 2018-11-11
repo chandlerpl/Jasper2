@@ -45,7 +45,9 @@ class Brain(object):
                     try:
                         module.handle()
                     except Exception:
+                        print("Error")
                         #self.mic.say("I'm sorry. I had some trouble with that operation. Please try again later.")
-                    finally:
+                    
+					finally:
                         return
 
