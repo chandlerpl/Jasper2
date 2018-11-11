@@ -25,13 +25,13 @@ class Brain(object):
                 print("Skipped module '%s' due to an error." + name)
             else:
                 if hasattr(module, 'WORDS'):
-					try:
-						if type = "Server":
-							modules.append(module)
-						elif getattr(module, 'TYPE') == "Client":
-							modules.append(module)
-					except:
-						print("Skipped module '%s', please confirm whether it is client or server." + name)
+                    try:
+                        if type = "Server":
+                            modules.append(module)
+                        elif getattr(module, 'TYPE') == "Client":
+                            modules.append(module)
+                    except:
+                        print("Skipped module '%s', please confirm whether it is client or server." + name)
 					
 					
         modules.sort(key=lambda module: module.PRIORITY if hasattr(module, 'PRIORITY')
