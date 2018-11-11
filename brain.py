@@ -8,7 +8,7 @@ class Brain(object):
     def __init__(self):
         #self.mic = mic
         #self.profile = profile
-        self.modules = self.get_modules()
+        self.modules = self.get_modules("Server")
         self._logger = logging.getLogger(__name__)
         print(self.modules)
 
