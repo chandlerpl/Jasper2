@@ -11,8 +11,6 @@ OUTPUT_MODULE_PATH = os.path.join(LIB_PATH, "outputmodules")
 
 CONFIG_PATH = os.path.expanduser(os.getenv('JASPER_CONFIG', '~/.jasper'))
 
-print(PLUGIN_PATH)
-
 def config(*fname):
     return os.path.join(CONFIG_PATH, *fname)
 
