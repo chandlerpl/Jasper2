@@ -7,7 +7,7 @@ Type = "Server"
 
 
 def handle():
-    rawPingFile = os.popen('ping -c 1 %s' % "cpope.uk")
+	rawPingFile = os.popen('ping -c 1 %s' % "cpope.uk")
 	rawPingData = rawPingFile.readlines()
 	rawPingFile.close()
 
@@ -26,8 +26,8 @@ def handle():
 			response = float(latency)
 			#return float(latency)
 			
-    print(response)
+	print(response)
 
 
 def isValid(text):
-    return bool(re.search(r'\b(website|checker)\b', text, re.IGNORECASE))
+	return bool(re.search(r'\b(website|checker)\b', text, re.IGNORECASE))
