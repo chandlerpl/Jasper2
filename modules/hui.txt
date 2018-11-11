@@ -1,0 +1,14 @@
+from Tkinter import *
+
+root = Tk()
+
+root.overrideredirect(True)
+root.overrideredirect(False)
+root.attributes('-fullscreen',True)
+
+
+root.mainloop()
+
+# SH SCRIPT
+#!/bin/bash
+#/usr/bin/python gui.py
