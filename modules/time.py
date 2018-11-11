@@ -1,8 +1,6 @@
 # -*- coding: utf-8-*-
 import datetime
 import re
-#from client.app_utils import getTimezone
-#from semantic.dates import DateService
 from pytz import timezone
 
 WORDS = ["TIME"]
@@ -18,4 +16,5 @@ def handle():
 
 
 def isValid(text):
-    return bool(re.search(r'\btime\b', text, re.IGNORECASE))
+    regex = "(" + "|".join(WORDS) + ")"
+    return bool(re.search(regex, text, re.IGNORECASE))
