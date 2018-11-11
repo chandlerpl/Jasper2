@@ -26,7 +26,7 @@ class Brain(object):
             else:
                 if hasattr(module, 'WORDS'):
                     try:
-                        if type = "Server":
+                        if type == "Server":
                             modules.append(module)
                         elif getattr(module, 'TYPE') == "Client":
                             modules.append(module)
