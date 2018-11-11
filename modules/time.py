@@ -10,7 +10,7 @@ Type = "Client"
 
 def handle():
     now = datetime.datetime.now(tz=timezone("GB"))
-	response = now
+    response = now
     #service = DateService()
     #response = service.convertTime(now)
     print(response)
